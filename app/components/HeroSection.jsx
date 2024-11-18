@@ -10,14 +10,13 @@ const HeroSection = () => {
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-exterabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-200 to-rose-400">
-                            Hello, I'm{" "}
+                            Hello, I&#39;m{" "}
                         </span>
                         <br></br>
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed out once, initially
                                 'Yael',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000,
                                 'Junior Software Engineer',
                                 1000,
                                 'graduate of the Technion',
