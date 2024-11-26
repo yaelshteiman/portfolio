@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import React, {useState} from 'react'
 import ProjectCard from "./ProjectCard";
+import ProjectTag from "./ProjectTag";
 
 const projectsData = [
     {
@@ -9,7 +11,7 @@ const projectsData = [
             "accurate language translation. This project integrates external translation APIs to support multiple " +
             "languages and real-time text processing.",
         image: "/images/projects/1.png",
-        tags: ["All", "JavaScript", "React", "Node.js", "APIs", "CSS"],
+        tag: ["All", "JavaScript", "React", "Node.js", "APIs", "CSS"],
         gitUrl: "/https://github.com/yaelshteiman/google-translate-clone"
     },
     {
@@ -19,7 +21,7 @@ const projectsData = [
             "conditions locally and worldwide. It provides additional details like \"Feels Like,\" \"Humidity,\" and " +
             "\"Wind Speed\" for a more comprehensive view of the weather. Weather data is fetched from the OpenWeatherMap API.",
         image: "/images/projects/2.png",
-        tags: ["All", "JavaScript", "React", "Node.js", "APIs", "HTML","CSS"],
+        tag: ["All", "JavaScript", "React", "Node.js", "APIs", "HTML","CSS"],
         gitUrl: "/https://github.com/yaelshteiman"
     },
     {
@@ -28,7 +30,7 @@ const projectsData = [
         description: "Recreated the classic Doodle Jump game using JavaScript, HTML, and CSS. This project demonstrates " +
             "interactive game mechanics, character movement, and dynamic rendering within the browser.",
         image: "/images/projects/3.png",
-        tags: ["All", "JavaScript","HTML", "CSS"],
+        tag: ["All", "JavaScript","HTML", "CSS"],
         gitUrl: "/https://github.com/yaelshteiman/js-doodle-jump"
     },
     {
@@ -38,7 +40,7 @@ const projectsData = [
             "user interaction, and responsive design. The game challenges players' memory and strategic thinking skills" +
             " as they match cards while avoiding penalties.",
         image: "/images/projects/4.png",
-        tags: ["All", "TypeScript", "HTML", "Tailwind CSS"],
+        tag: ["All", "TypeScript", "HTML", "TailwindCSS"],
         gitUrl: "/https://github.com/yaelshteiman/memory-card-game"
     },
     {
@@ -47,22 +49,76 @@ const projectsData = [
         description: "a portfolio website built with Next.js and Tailwind CSS. It showcases my skills, projects, and " +
             "achievements in an elegant and responsive design.",
         image: " /images/projects/5.png",
-        tags: ["All", "JavaScript", "React" ,"Next.js", "Tailwind CSS"],
+        tag: ["All", "JavaScript", "React" ,"Next.js", "TailwindCSS"],
         gitUrl: "/https://github.com/yaelshteiman"
     }
 ]
 
 const ProjectsSection = () => {
+    const [tag, setTag] = useState("All");
+    const handleTagChange = (newTag) => {
+        setTag(newTag);
+    };
+    const filteredProjects = projectsData.filter((project) =>
+        project.tag.includes(tag)
+    );
     return (
         <>
-            <h2> My Projects</h2>
+            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12"> My Projects</h2>
             <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-                <button className="rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer">All</button>
-                <button className="rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer">JavaScript</button>
-                <button>React</button>
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="All"
+                    isSelected={tag === "All"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="React"
+                    isSelected={tag === "React"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Next.js"
+                    isSelected={tag === "Next.js"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="JavaScript"
+                    isSelected={tag === "JavaScript"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="TypeScript"
+                    isSelected={tag === "TypeScript"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Node.js"
+                    isSelected={tag === "Node.js"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="APIs"
+                    isSelected={tag === "APIs"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="HTML"
+                    isSelected={tag === "HTML"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="CSS"
+                    isSelected={tag === "CSS"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="TailwindCSS"
+                    isSelected={tag === "TailwindCSS"}
+                />
             </div>
-            <div>
-                {projectsData.map((project) =>
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+                {filteredProjects.map((project) =>
                     <ProjectCard
                         key={project.id}
                         title={project.title}
