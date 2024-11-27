@@ -12,7 +12,7 @@ const projectsData = [
             "languages and real-time text processing.",
         image: "/images/projects/1.png",
         tag: ["All", "JavaScript", "React", "Node.js"],
-        gitUrl: "/https://github.com/yaelshteiman/google-translate-clone"
+        gitUrl: "https://github.com/yaelshteiman/google-translate-clone"
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const projectsData = [
             "\"Wind Speed\" for a more comprehensive view of the weather. Weather data is fetched from the OpenWeatherMap API.",
         image: "/images/projects/2.png",
         tag: ["All", "JavaScript", "React", "Node.js"],
-        gitUrl: "/https://github.com/yaelshteiman"
+        gitUrl: "https://github.com/yaelshteiman"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const projectsData = [
             "interactive game mechanics, character movement, and dynamic rendering within the browser.",
         image: "/images/projects/3.png",
         tag: ["All", "JavaScript"],
-        gitUrl: "/https://github.com/yaelshteiman/js-doodle-jump"
+        gitUrl: "https://github.com/yaelshteiman/js-doodle-jump"
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const projectsData = [
             " as they match cards while avoiding penalties.",
         image: "/images/projects/4.png",
         tag: ["All", "TypeScript", "TailwindCSS"],
-        gitUrl: "/https://github.com/yaelshteiman/memory-card-game"
+        gitUrl: "https://github.com/yaelshteiman/memory-card-game"
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const projectsData = [
             "achievements in an elegant and responsive design.",
         image: " /images/projects/5.png",
         tag: ["All", "JavaScript", "React" ,"NextJS", "TailwindCSS"],
-        gitUrl: "/https://github.com/yaelshteiman"
+        gitUrl: "https://github.com/yaelshteiman"
     }
 ]
 
