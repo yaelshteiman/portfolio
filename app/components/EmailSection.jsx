@@ -4,6 +4,8 @@ import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link"
 import Image from "next/image"
 
+const accessKey = process.env.ACCESS_KEY
+
 
 const EmailSection = () => {
     return <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
@@ -20,24 +22,25 @@ const EmailSection = () => {
             </p>
             <div className="socials flex flex-row gap-2">
                 <Link href="https://github.com/yaelshteiman/">
-                    <Image src={GithubIcon} alt="Github Icon" />
+                    <Image src={GithubIcon} alt="Github Icon"/>
                 </Link>
                 <Link href="https://www.linkedin.com/in/yaelshteiman/">
-                    <Image src={LinkedinIcon} alt="Linkedin Icon" />
+                    <Image src={LinkedinIcon} alt="Linkedin Icon"/>
                 </Link>
             </div>
         </div>
         <div>
-            <form className="flex flex-col">
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                className="flex flex-col"
+            >
                 <div className="mb-6">
-                    <label
-                        htmlFor="email"
-                        className="text-white block mb-2 text-sm font-medium"
-                    >
-                        Your Email
-                    </label>
+                    <input type="hidden" name="access_key" value={accessKey}/>
+                    <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">Your Email</label>
                     <input
                         type="email"
+                        name="email"
                         id="email"
                         required
                         className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -45,13 +48,11 @@ const EmailSection = () => {
                     />
                 </div>
                 <div className="mb-6">
-                    <label
-                        htmlFor="subjecr"
-                        className="text-white block text-sm mb-2 font-medium"
-                    >
+                    <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
                         Subject
                     </label>
                     <input
+                        name="name"
                         type="text"
                         id="subject"
                         required
