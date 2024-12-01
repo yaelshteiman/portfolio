@@ -62,11 +62,11 @@ const AboutSection = () => {
                 <h2 className="text-4xl font-bold text-white mb-4 font-serif">About Me</h2>
                 <p className="text-base md:text-lg">
                     I am Yael, a junior software engineer with a passion for creating interactive and responsive web
-                    applications.I hold a B.Sc. in Computer Science and Mathematics from the Technion and gained
-                    hands-on experience as a software engineering intern. Proficient in JavaScript, React, Node.js,
-                    HTML, CSS, and Git, I am a quick learner who’s always eager to expand my knowledge and skill set.
+                    applications.<br></br> I hold a B.Sc. in Computer Science and Mathematics from the Technion and gained
+                    hands-on experience as a software engineering intern. <br></br>Proficient in JavaScript, React, Node.js,
+                    HTML, CSS, and Git.<br></br> I am a quick learner who’s always eager to expand my knowledge and skill set.<br></br>
                     When I am not coding, you’ll find me on the yoga mat, recharging and drawing inspiration for my
-                    next project. Let’s connect and build something impactful together!
+                    next project. <br></br>Let’s connect and build something impactful together!
                 </p>
                 <div className="flex flex-row justify-start mt-8">
                     <TabButton
