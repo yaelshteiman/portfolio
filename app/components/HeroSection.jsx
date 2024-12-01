@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Image from "next/image";
-import { TypeAnimation } from 'react-type-animation';
+import Link from "next/link";
 
 const HeroSection = () => {
     return (
@@ -19,12 +19,21 @@ const HeroSection = () => {
                         Israel Institute of Technology.
                     </p>
                     <div>
-                        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-teal-500 via-cyan-600 to-sky-700 hover:bg-slate-200 text-white">
+                        <Link
+                            href="/#contact"
+                            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-teal-500 via-cyan-600 to-sky-700 hover:bg-slate-200 text-white"
+                        >
                             Hire Me
-                        </button>
-                        <button className="px-1 py-1 w-full sm:w-fit  rounded-full bg-gradient-to-br from-teal-500 via-cyan-600 to-sky-700 hover:bg-slate-800 text-white mt-3">
-                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download Resume</span>
-                        </button>
+                        </Link>
+                        <Link
+                            href="https://drive.google.com/file/d/1GYVWMYKNAFD4UgTcFHNm3EqLLUcz8Suw/view?usp=sharing"
+                            className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-teal-500 via-cyan-600 to-sky-700 hover:bg-slate-200 text-white mt-3"
+                        >
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                                Download Resume
+                            </span>
+
+                        </Link>
 
                     </div>
                 </div>
@@ -36,7 +45,6 @@ const HeroSection = () => {
                             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                             width={210}
                             height={220}
-
                         />
                     </div>
 
