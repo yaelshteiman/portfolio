@@ -12,20 +12,6 @@ const HeroSection = () => {
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-700 font-bold font-serif">
                             Yael Shteiman.
                         </span>
-
-                        {/*<TypeAnimation*/}
-                        {/*    sequence={[*/}
-                        {/*        'Yael',*/}
-                        {/*        1000,*/}
-                        {/*        'Software Engineer',*/}
-                        {/*        1000,*/}
-                        {/*        'Technion graduate',*/}
-                        {/*        1000*/}
-                        {/*    ]}*/}
-                        {/*    wrapper="span"*/}
-                        {/*    speed={50}*/}
-                        {/*    repeat={Infinity}*/}
-                        {/*/>*/}
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl ">
                         Highly motivated Software Engineer with BSC in Computer Science and Mathematics from the
