@@ -63,8 +63,10 @@ const ProjectsSection = () => {
         project.tag.includes(tag)
     );
     return (
-        <>
-            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 font-serif"> My Projects</h2>
+        <section id="projects">
+            <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 font-serif">
+                My Projects
+            </h2>
             <div className="text-white flex flex-row justify-center items-center gap-2 py-4">
                 <ProjectTag
                     onClick={handleTagChange}
@@ -114,7 +116,7 @@ const ProjectsSection = () => {
                     />
                 )}
             </div>
-        </>
+        </section>
     )
 }
 
