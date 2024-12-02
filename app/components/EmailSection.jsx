@@ -4,7 +4,7 @@ import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link"
 import Image from "next/image"
 
-const accessKey = process.env.ACCESS_KEY
+const access_key = process.env.ACCESS_KEY
 
 
 const EmailSection = () => {
@@ -31,7 +31,7 @@ const EmailSection = () => {
                 className="flex flex-col"
             >
                 <div className="mb-6">
-                    <input type="hidden" name="access_key" value={accessKey}/>
+                    <input type="hidden" name="access_key" value={access_key}/>
                     <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">Your Email</label>
                     <input
                         type="email"
