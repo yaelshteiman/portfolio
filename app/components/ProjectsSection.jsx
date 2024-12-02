@@ -51,7 +51,7 @@ const projectsData = [
             "achievements in an elegant and responsive design.",
         image: " /images/projects/5.png",
         tag: ["All", "JavaScript", "React" ,"NextJS", "TailwindCSS"],
-        gitUrl: "https://github.com/yaelshteiman"
+        gitUrl: "https://github.com/yaelshteiman/portfolio"
     }
 ]
 
