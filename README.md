@@ -14,7 +14,7 @@ A portfolio website built with Next.js and Tailwind CSS. <br>
 
 ### Steps to Run the Project:
 1. Clone the repository:
-    ``` git clone https://github.com/yaelshteiman/portfolio```
+    ``` git clone https://github.com/yaelshteiman/portfolio.git```
 2. Install the dependencies: ```npm install```
 3. Start the development server: ```npm run dev```
 4. Open your browser and visit ```http://localhost:3000``` to view the website.
