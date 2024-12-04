@@ -23,7 +23,7 @@ const projectsData = [
             "\"Wind Speed\" for a more comprehensive view of the weather. Weather data is fetched from the OpenWeatherMap API.",
         image: "/images/projects/2.png",
         tag: ["All", "JavaScript", "React", "Node.js"],
-        gitUrl: "https://github.com/yaelshteiman"
+        gitUrl: "https://github.com/yaelshteiman/weather-app"
     },
     {
         id: 3,
