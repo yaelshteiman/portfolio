@@ -12,7 +12,7 @@ const projectsData = [
             "accurate language translation. This project integrates external translation APIs to support multiple " +
             "languages and real-time text processing.",
         image: "/images/projects/1.png",
-        tag: ["All", "JavaScript", "React", "Node.js"],
+        tag: ["All", "JavaScript/TypeScript", "React/Next.js", "Node.js"],
         gitUrl: "https://github.com/yaelshteiman/google-translate-clone"
     },
     {
@@ -22,7 +22,7 @@ const projectsData = [
             "conditions locally and worldwide. It provides additional details like \"Feels Like,\" \"Humidity,\" and " +
             "\"Wind Speed\" for a more comprehensive view of the weather. Weather data is fetched from the OpenWeatherMap API.",
         image: "/images/projects/2.png",
-        tag: ["All", "JavaScript", "React", "Node.js"],
+        tag: ["All", "JavaScript/TypeScript", "React/Next.js", "Node.js"],
         gitUrl: "https://github.com/yaelshteiman/weather-app"
     },
     {
@@ -31,7 +31,7 @@ const projectsData = [
         description: "Recreated the classic Doodle Jump game using JavaScript, HTML, and CSS. This project demonstrates " +
             "interactive game mechanics, character movement, and dynamic rendering within the browser.",
         image: "/images/projects/3.png",
-        tag: ["All", "JavaScript"],
+        tag: ["All", "JavaScript/TypeScript"],
         gitUrl: "https://github.com/yaelshteiman/js-doodle-jump"
     },
     {
@@ -41,7 +41,7 @@ const projectsData = [
             "user interaction, and responsive design. The game challenges players' memory and strategic thinking skills" +
             " as they match cards while avoiding penalties.",
         image: "/images/projects/4.png",
-        tag: ["All", "TypeScript", "TailwindCSS"],
+        tag: ["All", "JavaScript/TypeScript", "TailwindCSS"],
         gitUrl: "https://github.com/yaelshteiman/memory-card-game"
     },
     {
@@ -50,7 +50,7 @@ const projectsData = [
         description: "a portfolio website built with Next.js and Tailwind CSS. It showcases my skills, projects, and " +
             "achievements in an elegant and responsive design.",
         image: " /images/projects/5.png",
-        tag: ["All", "JavaScript", "React" ,"NextJS", "TailwindCSS"],
+        tag: ["All", "JavaScript/TypeScript", "React/Next.js" , "TailwindCSS"],
         gitUrl: "https://github.com/yaelshteiman/portfolio"
     }
 ]
@@ -78,7 +78,7 @@ const ProjectsSection = () => {
             <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12 font-serif">
                 My Projects
             </h2>
-            <div className="grid grid-cols-2 lg:grid-cols-7 md:grid-cols-4 text-white justify-center items-center gap-2 py-4">
+            <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
                 <ProjectTag
                     onClick={handleTagChange}
                     name="All"
@@ -86,23 +86,13 @@ const ProjectsSection = () => {
                 />
                 <ProjectTag
                     onClick={handleTagChange}
-                    name="React"
-                    isSelected={tag === "React"}
+                    name="React/Next.js"
+                    isSelected={tag === "React/Next.js"}
                 />
                 <ProjectTag
                     onClick={handleTagChange}
-                    name="NextJS"
-                    isSelected={tag === "NextJS"}
-                />
-                <ProjectTag
-                    onClick={handleTagChange}
-                    name="JavaScript"
-                    isSelected={tag === "JavaScript"}
-                />
-                <ProjectTag
-                    onClick={handleTagChange}
-                    name="TypeScript"
-                    isSelected={tag === "TypeScript"}
+                    name="JavaScript/TypeScript"
+                    isSelected={tag === "JavaScript/TypeScript"}
                 />
                 <ProjectTag
                     onClick={handleTagChange}
