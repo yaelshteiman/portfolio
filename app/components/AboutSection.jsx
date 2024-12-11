@@ -57,7 +57,7 @@ const AboutSection = () => {
                 alt="About Image"
                 width={500}
                 height={500}
-                className="hidden lg:block md:block"
+                className="hidden lg:block md:block rounded-t-xl"
             />
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold text-white mb-4 font-serif">About Me</h2>
